@@ -131,7 +131,8 @@ input {
   width: 100%;
   display: table-cell;
   vertical-align: middle;
-  background-color: #444444;
+/*  background-color: #444444;*/
+  background-color: #E5E4E2;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;}
@@ -140,12 +141,23 @@ input {
     color: #fff;
   }
 
+  .icon{
+    top:25%!important;
+  }
+
   .icon-inactive {
     color: #888;
   }
 
   .icon-active {
     color: #aaff00;
+  }
+
+  .levelunit{
+    top:30%!important;
+  }
+  h2.level{
+    font-size:200%!important;
   }
 }
 
@@ -201,3 +213,36 @@ input {
 }
 
 .modalDialogCloseButton:hover { background: #444; }
+
+
+/* EDIT: https://community.home-assistant.io/t/sonos-dashboard/18843 */
+/*  current song widget  */
+.widget-basedisplay-default-sonos-flat-playing .value{
+  display: block !important;
+  font-size: 150%;
+  margin-top: 7px;
+}
+.widget-basedisplay-default-sonos-flat-playing .value::first-line{
+  font-size: 150%;
+  line-height: 150%;
+}
+.widget-basedisplay-default-sonos-flat-playing .valueunit {
+  top: 25px !important;
+}
+
+/*  next song widget  */
+.widget-basedisplay-default-sonos-flat-playing-next .value{
+  display: block !important;
+  font-size: 100%;
+  margin-top: 10px;
+}
+.widget-basedisplay-default-sonos-flat-playing-next .value::first-line{
+  font-size: 150%;
+  line-height: 150%;
+}
+.widget-basedisplay-default-sonos-flat-playing-next .valueunit {
+  top: 25px !important;
+}
+
+/*  fix font  */
+.widget {font-family: 'Lato', sans-serif;}

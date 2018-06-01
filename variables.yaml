@@ -262,3 +262,8 @@ alarm_panel_button_style: "background-color: $gray_medium"
 
 camera_widget_style: $background_style
 camera_title_style: "$style_title; background-color: rgba(0, 0, 0, 0.5)"
+
+scripttitled_icon_style_active: "$style_active; float:left; margin-left:8px; width:auto;"
+scripttitled_icon_style_inactive: "$style_inactive; float:left; margin-left:8px; width:auto;"
+scripttitled_title_style: "$style_title; float: right; width: auto; text-align:left; margin-left:64px;"
+scripttitled_title2_style: "$style_title2; float: right; width: auto; text-align:left; margin-left:64px; font-size:125%; line-height:125%; height:75%; overflow:hidden; color:$blue;"
